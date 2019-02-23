@@ -1,0 +1,86 @@
+
+/*-------------------
+Sample CSS overwriting main.css rules
+
+[Table of contents]
+    1. Typography
+    2. Page cover behavior on scroll 
+[Colors]
+    Dark blue : rgba(16, 25, 35, 0.9);
+[Typography]
+    font-family :
+    - Serif : "Playfair Display"
+*/
+@import "variables";
+
+/* 1. Typography */
+// typography
+.page-header-alpha .navbar-mainmenu .nav-item{
+    font-family: $serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.display-title{
+    font-family: $serif;
+}
+.section-home{
+    .display-title{
+    }
+}
+.section-title .title{
+    font-family: $serif;
+    text-transform: none;
+}
+.media-service h4{
+    font-family: $serif;
+}
+.section-content h2{
+    font-family: $serif;
+}
+.section-content h3{
+    font-family: $serif;
+}
+
+/* 2. Page cover behavior on scroll / .page-cover */ 
+.page-cover{
+    &:after{
+        content: "";
+        // background: linear-gradient(to left, #D1335B, #00152e);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: 0.3s;
+        // @media (min-width: $large-up) {
+        //     left: 40px;
+        //     right: 40px;
+        //     bottom: 40px;
+        //     top: 40px;
+        // }
+    }
+    &.scrolled:after{
+        // background: $black;
+        // background: #0d0d0d;
+        // background: rgba(#000, 0.8);
+        background: rgba(16, 25, 35, 0.9);
+    }
+}
+.section-register{
+    // border-top: 1px solid rgba(white, 0.2);
+    background: rgba(white, 0.05);
+}
+
+/* 3. Item page */
+.section-twoside{
+    .section-side.side-content{
+        background: rgba(16, 25, 35, 0.9);
+        color: $white;
+        .btn-outline-white,
+        .btn-outline-black{
+            color: currentColor;
+            border-color: currentColor;
+        }
+    }
+}
