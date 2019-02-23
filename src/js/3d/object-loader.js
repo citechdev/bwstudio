@@ -1,3 +1,5 @@
+var objObject = require("./bwws.obj");
+
 (function() {
     "use strict";
 
@@ -48,8 +50,7 @@
         scene.add( light4 );
 
         loader = new THREE.OBJLoader();
-        loader.setPath("/src/js/3d/");
-        loader.load("bwws.obj", function (obj) {
+        loader.load(objObject, function (obj) {
             obj.scale.set(2.9,2.9,2.9);
             scene.add(obj);
         })
@@ -60,7 +61,6 @@
         renderer.setSize( window.innerWidth, window.innerHeight );
         container.appendChild( renderer.domElement );
 
-        //
         document.addEventListener( "mousemove", onDocumentMouseMove, false );
         window.addEventListener( "resize", onWindowResize, false );
     }

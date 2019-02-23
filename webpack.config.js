@@ -7,10 +7,10 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: {
-        main: "./src/js/main.js",
-        objectLoader: "./src/js/3d/object-loader.js",
-        projector: "./src/js/3d/projector.js",
-        canvasRenderer: "./src/js/3d/canvasrenderer.js"
+        "projector": "./src/js/3d/projector.js",
+        "canvasrenderer": "./src/js/3d/canvasrenderer.js",
+        "object-loader": "./src/js/3d/object-loader.js",
+        "main": "./src/js/main.js"
     },
     output: {
         filename: "js/[name].js",
@@ -37,11 +37,10 @@ module.exports = {
                 ]
 			},
 			{
-				test: /\.(mp3)$/,
+				test: /\.(mp3|obj)$/,
 				use: [
 				  {
-					loader: 'file-loader',
-					options: {},
+					loader: 'file-loader'
 				  }
 				]
             },
