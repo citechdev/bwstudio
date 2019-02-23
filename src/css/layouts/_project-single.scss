@@ -82,7 +82,7 @@ body.project-single {
 				}
 
 				&.next {
-					background-image: url(../images/icon-right.svg);
+					background-image: url("../images/icon-right.svg");
 					background-repeat: no-repeat;
 					background-position: 12.5px center;
 					left: ds-rem-calc(45);
@@ -103,7 +103,7 @@ body.project-single {
 				}
 
 				&.prev {
-					background-image: url(../images/icon-left.svg);
+					background-image: url("../images/icon-left.svg");
 					background-repeat: no-repeat;
 					background-position: 10.5px center;
 					left: ds-rem-calc(10);

@@ -1,3 +1,5 @@
+require("../css/main.scss");
+
 (function() {
     "use strict";
 
