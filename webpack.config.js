@@ -10,6 +10,8 @@ module.exports = {
         "projector": "./src/js/3d/projector.js",
         "canvasrenderer": "./src/js/3d/canvasrenderer.js",
         "object-loader": "./src/js/3d/object-loader.js",
+        "jquery-downCount": "./src/js/jquery.downCount.js",
+        "form_script" : "./src/js/form_script.js",
         "main": "./src/js/main.js"
     },
     output: {
@@ -45,7 +47,7 @@ module.exports = {
 				]
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g|svg|woff|eot|ttf)$/i,
                 loader: 'url-loader',
                 options: {
                     limit: 100000,
@@ -83,15 +85,22 @@ module.exports = {
         ]),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-reboot.min.css"),
-                to: path.resolve(__dirname, "dist/css/bootstrap-reboot.min.css"),
+                from: path.resolve(__dirname,"src/css/plugins/bootstrap.min.css"),
+                to: path.resolve(__dirname, "dist/css/bootstrap.min.css"),
                 toType: "file"
             }
         ]),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-grid.min.css"),
-                to: path.resolve(__dirname, "dist/css/bootstrap-grid.min.css"),
+                from: path.resolve(__dirname,"src/css/plugins/pageloader.css"),
+                to: path.resolve(__dirname, "dist/css/pageloader.css"),
+                toType: "file"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname,"src/css/plugins/style-default.css"),
+                to: path.resolve(__dirname, "dist/css/style-default.css"),
                 toType: "file"
             }
         ])
