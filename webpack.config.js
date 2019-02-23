@@ -3,13 +3,20 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const devMode = process.env.NODE_ENV !== 'production';
+
+let pathsToClean = [
+    "dist"
+];
 
 module.exports = {
     entry: {
         "projector": "./src/js/3d/projector.js",
         "canvasrenderer": "./src/js/3d/canvasrenderer.js",
         "object-loader": "./src/js/3d/object-loader.js",
+        "jquery-downCount": "./src/js/jquery.downCount.js",
+        "form_script" : "./src/js/form_script.js",
         "main": "./src/js/main.js"
     },
     output: {
@@ -40,21 +47,25 @@ module.exports = {
 				test: /\.(mp3|obj)$/,
 				use: [
 				  {
-					loader: 'file-loader'
+                    loader: 'file-loader',
+                    options: {
+                        name: "3d/[name].[ext]"
+                    }
 				  }
 				]
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g|svg|woff|eot|ttf)$/i,
                 loader: 'url-loader',
                 options: {
-                    limit: 100000,
-                    name: "images/[name].[hash].[ext]"
+                    limit: 1000,
+                    name: "img/[name].[ext]"
                 }  
             }
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(pathsToClean),
         new MiniCssExtractPlugin({
             filename: "css/main.css",
             chunkFilename: "id.css"
@@ -83,15 +94,22 @@ module.exports = {
         ]),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-reboot.min.css"),
-                to: path.resolve(__dirname, "dist/css/bootstrap-reboot.min.css"),
+                from: path.resolve(__dirname,"src/css/plugins/bootstrap.min.css"),
+                to: path.resolve(__dirname, "dist/css/bootstrap.min.css"),
                 toType: "file"
             }
         ]),
         new CopyWebpackPlugin([
             {
-                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-grid.min.css"),
-                to: path.resolve(__dirname, "dist/css/bootstrap-grid.min.css"),
+                from: path.resolve(__dirname,"src/css/plugins/pageloader.css"),
+                to: path.resolve(__dirname, "dist/css/pageloader.css"),
+                toType: "file"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname,"src/css/plugins/style-default.css"),
+                to: path.resolve(__dirname, "dist/css/style-default.css"),
                 toType: "file"
             }
         ])

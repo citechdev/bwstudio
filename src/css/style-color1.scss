@@ -1,0 +1,203 @@
+/*-------------------
+Sample CSS overwriting main.css rules
+
+[Table of contents]
+    0 General layout
+    1 Header
+        1.1 menu icon / .menu-icon
+        1.2 menu content / .nav-item 
+    2 Footer
+    3 Forms and buttons / .form-control-*
+    4 Overwritting Background cover of a section / .section .section-cover-full
+[Colors]
+    Green : #61ffa9;
+    Black : #1d1d1d;
+[Typography]
+    font-family :
+    - Serif : "Playfair Display"
+*/
+@import "variables";
+
+$black : #1d1d1d;
+$light-black : #5d5d5d;
+$color1 : #61ffa9;
+
+/* 0 General layout */
+body,
+.body-page {
+    background-color: $white;
+    color: $dark-black;
+}
+
+/* 1 Header */
+/* 1.1 menu icon / .menu-icon */
+.menu-icon{
+    border-color: rgba($black, 0.2);
+    &:hover{
+        border-color: $black;
+    }
+}
+.menu-icon .bars .bar1, .menu-icon .bars .bar2, .menu-icon .bars .bar3{
+    background: $black;
+}
+.page-header.content-white{
+    .menu-icon{
+        border-color: rgba($white, 0.2);
+        background: $white;
+        &:hover{
+            border-color: $white;
+        }
+    }
+}
+/* 1.2 menu content / .nav-item */
+.page-header-alpha .navbar-mainmenu .nav-item a:hover{
+    color: $color1;
+}   
+
+/* 2 Footer */
+.page-footer.content-white{
+    color: $white;
+}
+
+/* 3 Forms and buttons / .form-control- */
+// message form
+.form-control-outline,
+.form-control-line{
+    border-color: $black;
+    &:focus{
+        border-color: #5d5d5d;
+    }
+}
+.form-control-line.form-control-white{
+    border-color: $black;
+}
+.form-group label.error,
+.form-container-transparent.form-container-white .form-input label,
+.form-container-transparent .form-input input.form-control-line{
+    color: $black;
+}
+
+/* Buttons / .btn-*/
+.btn-outline-white{
+    color: currentColor;
+    border-color: currentColor;
+}
+.btn-divided{
+    border-color: $green;
+    .b-subtitle{
+        color: $green;
+    }
+}
+
+
+/* 4. Overwritting Background cover of a section / .section .section-cover-full */
+/* Home page */
+.section-home{
+    .home-title{
+        color: $green;
+        background-image: $gradient-green;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+}
+/* Section title */
+.section-title .title{
+    color: $green;
+    background-image: $gradient-green;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+/* section content */
+.section-description:not(.content-white) .section-content .display-title{
+    color: $green;
+    background-image: $gradient-blue;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+/* section service / media service / .media-service */
+.media-service{
+    h4{
+        color: $green;
+        background-image: $gradient-green;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+}
+/* section products */
+.section-list-products{
+    .title-desc{
+        h2{
+            // color: $green;
+            // background-image: $gradient-green;
+            // background-size: cover;
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            // text-fill-color: transparent;
+        }
+    }
+}
+/* row product / .row-product */
+.row-product{
+    &#product-item-1 h3{
+        background-image: $gradient-purple;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+    &#product-item-2 h3{
+        background-image: linear-gradient(to right, #e0dbd5, #5bc3ba);
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+    &#product-item-3 h3{
+        background-image: linear-gradient(to right, #ce9367, #5bc3ba);
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+}
+
+/* section-contact */
+.section-contact{
+    .title-desc .display-title{
+        color: $green;
+        background-image: $gradient-green;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+}
+
+/* 5. Item page */
+.body-item{
+    .menu-icon{
+        background: $white;
+    }
+    .item-detail{
+        background: $white;
+        color: $black;
+    }
+}
