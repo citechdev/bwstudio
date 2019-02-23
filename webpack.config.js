@@ -81,6 +81,20 @@ module.exports = {
                 to: path.resolve(__dirname, "dist/js/libraries/"),
                 toType: "dir"
             }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-reboot.min.css"),
+                to: path.resolve(__dirname, "dist/css/bootstrap-reboot.min.css"),
+                toType: "file"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname,"src/css/bootstrap/bootstrap-grid.min.css"),
+                to: path.resolve(__dirname, "dist/css/bootstrap-grid.min.css"),
+                toType: "file"
+            }
         ])
 
     ],
