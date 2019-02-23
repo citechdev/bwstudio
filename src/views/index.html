@@ -98,7 +98,8 @@ http://miradontsoa.com
     <!-- Begin of logo/brand -->
     <a class="navbar-brand" href="./#">
       <span class="logo">
-        <img class="light-logo" src="img/logo.png" alt="Logo">
+        <img class="light-logo" src=<%=require("../img/logo.png")%> alt="Logo">
+        
       </span>
     </a>
     <!-- End of logo/brand -->
@@ -173,7 +174,7 @@ http://miradontsoa.com
   <!-- BEGIN OF page cover -->
   <div class="page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg bg-img" data-image-src="img/bg-default.jpg"></div>
+    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default.jpg")%></div>></div>
 
     <!-- Transluscent mask as filter -->
     <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
@@ -254,7 +255,7 @@ http://miradontsoa.com
     <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-1"
     data-section="about-us">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src="./img/sections/bg-2.png"></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%></div>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -300,7 +301,7 @@ http://miradontsoa.com
     <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-2"
     data-section="mission">
 
-      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src="./img/sections/bg-1.png"></div>
+      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%></div>></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -456,7 +457,7 @@ http://miradontsoa.com
     <div class="section section-team fp-auto-height-responsive fp-auto-height no-footer"
     data-section="team-list">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src="./img/sections/bg-2.png"></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%></div>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -546,7 +547,7 @@ http://miradontsoa.com
     data-section="projects-page-1">
       <!-- Begin of a side : left-->
       <div class="section-side side-left side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src="./img/items/img-sample2.jpg">
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/sections/img-sample2.jpg")%></div>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -580,7 +581,7 @@ http://miradontsoa.com
 
       <!-- Begin of a side : right-->
       <div class="section-side side-right side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src="./img/items/img-sample10.jpg">
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/sections/img-sample10.jpg")%></div>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -1245,6 +1246,8 @@ http://miradontsoa.com
   <script src="./js/plugins/slick.min.js"></script>
   <script src="./js/plugins/scrolloverflow.min.js"></script>
   <script src="./js/plugins/all.js"></script>
+  <script src="js/libraries/three.min.js"></script>
+	<script src="https://mamboleoo.be/learnThree/demos/OBJLoader.js"></script>
   <script src="./js/plugins/particles.min.js"></script>
 
 </body>

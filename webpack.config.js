@@ -3,7 +3,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const devMode = process.env.NODE_ENV !== 'production';
+
+let pathsToClean = [
+    "dist"
+];
 
 module.exports = {
     entry: {
@@ -42,7 +47,10 @@ module.exports = {
 				test: /\.(mp3|obj)$/,
 				use: [
 				  {
-					loader: 'file-loader'
+                    loader: 'file-loader',
+                    options: {
+                        name: "3d/[name].[ext]"
+                    }
 				  }
 				]
             },
@@ -51,12 +59,13 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 100000,
-                    name: "images/[name].[hash].[ext]"
+                    name: "img/[name].[ext]"
                 }  
             }
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(pathsToClean),
         new MiniCssExtractPlugin({
             filename: "css/main.css",
             chunkFilename: "id.css"
