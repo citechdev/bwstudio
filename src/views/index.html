@@ -21,15 +21,15 @@ http://miradontsoa.com
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Twitter Meta -->
-  <meta name="twitter:site" content="@miradontsoa">
+  <!-- <meta name="twitter:site" content="@miradontsoa">
   <meta name="twitter:creator" content="@miradontsoa">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Page Title">
   <meta name="twitter:description" content="Description of the page">
-  <meta name="twitter:image" content="/img/bg-default.jpg">
+  <meta name="twitter:image" content="/img/bg-default.jpg"> -->
 
   <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
+  <!-- <meta property="og:url" content="your website url here">
   <meta property="og:title" content="Page Title">
   <meta property="og:description" content="Description of the page">
   <meta property="og:type" content="website">
@@ -37,7 +37,7 @@ http://miradontsoa.com
   <meta property="og:image:secure_url" content="/img/bg-default.jpg">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="630"> -->
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
@@ -174,7 +174,7 @@ http://miradontsoa.com
   <!-- BEGIN OF page cover -->
   <div class="page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default.jpg")%></div>></div>
+    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default.jpg")%> ></div>
 
     <!-- Transluscent mask as filter -->
     <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
@@ -188,6 +188,8 @@ http://miradontsoa.com
     <!-- Begin of home section -->
     <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
     data-section="home">
+
+      <div id="hero" class="hero"></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
         <!-- content -->
@@ -255,7 +257,7 @@ http://miradontsoa.com
     <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-1"
     data-section="about-us">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%></div>></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -301,7 +303,7 @@ http://miradontsoa.com
     <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-2"
     data-section="mission">
 
-      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%></div>></div>
+      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%>></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -457,7 +459,7 @@ http://miradontsoa.com
     <div class="section section-team fp-auto-height-responsive fp-auto-height no-footer"
     data-section="team-list">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%></div>></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -468,7 +470,7 @@ http://miradontsoa.com
             <div class="col-12 col-lg-4 center-vh end-h">
               <div class="img-frame-normal portrait">
                 <a href="team.html">
-                  <img class="img" src="img/items/img-people1.jpg" alt="Image">
+                  <img class="img" src=<%=require("../img/items/img-sample1.jpg")%>  alt="Image">
                   <div class="legend decor text-center">
                     <h5 class="display-geo">Jane Lebron</h5>
                     <p class="small">Artist / Programer</p>
@@ -481,7 +483,7 @@ http://miradontsoa.com
             <div class="col-12 col-lg-4 center-vh end-h">
               <div class="img-frame-normal portrait">
                 <a href="team.html">
-                  <img class="img" src="img/items/img-people2.jpg" alt="Image">
+                  <img class="img" src=<%=require("../img/items/img-people2.jpg")%>  alt="Image">
                   <div class="legend decor text-center">
                     <h5 class="display-geo">Bob Jackson</h5>
                     <p class="small">Project Manager</p>
@@ -494,7 +496,7 @@ http://miradontsoa.com
             <div class="col-12 col-lg-4 center-vh end-h">
               <div class="img-frame-normal portrait">
                 <a href="team.html">
-                  <img class="img" src="img/items/img-people3.jpg" alt="Image">
+                  <img class="img" src=<%=require("../img/items/img-people3.jpg")%>  alt="Image">
                   <div class="legend decor text-center">
                     <h5 class="display-geo">Julia Lacase</h5>
                     <p class="small">Speaker / Journalist</p>
@@ -547,7 +549,7 @@ http://miradontsoa.com
     data-section="projects-page-1">
       <!-- Begin of a side : left-->
       <div class="section-side side-left side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/sections/img-sample2.jpg")%></div>>
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample2.jpg")%>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -581,7 +583,7 @@ http://miradontsoa.com
 
       <!-- Begin of a side : right-->
       <div class="section-side side-right side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/sections/img-sample10.jpg")%></div>>
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample10.jpg")%>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -679,7 +681,7 @@ http://miradontsoa.com
               <div class="content-wrapper">
                 <div class="img-frame-normal">
                   <div class="img-1">
-                    <img class="img" src="img/items/img-sample8.jpg" alt="Image">
+                    <img class="img" src=<%=require("../img/items/img-sample8.jpg")%> alt="Image">
                   </div>
                 </div>
               </div>
@@ -711,7 +713,7 @@ http://miradontsoa.com
               <div class="content-wrapper">
                 <div class="img-frame-normal">
                   <div class="img-1">
-                    <img class="img" src="img/items/img-sample9.jpg" alt="Image">
+                    <img class="img" src=<%=require("../img/items/img-sample9.jpg")%>  alt="Image">
                   </div>
                 </div>
               </div>
@@ -743,7 +745,7 @@ http://miradontsoa.com
               <div class="content-wrapper">
                 <div class="img-frame-normal">
                   <div class="img-1">
-                    <img class="img" src="img/items/img-sample10.jpg" alt="Image">
+                    <img class="img" src=<%=require("../img/items/img-sample10.jpg")%>  alt="Image">
                   </div>
                 </div>
               </div>
@@ -835,7 +837,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-post">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample3.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample3.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
@@ -859,7 +861,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-post">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample8.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample8.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
@@ -883,7 +885,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-post">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample5.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample5.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
@@ -907,7 +909,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-post">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample6.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample6.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
@@ -969,7 +971,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-line">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample6.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample6.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
@@ -993,7 +995,7 @@ http://miradontsoa.com
             <!-- an item -->
             <div class="item media media-line">
               <div class="media-img mask-black">
-                <img class="img img-block" src="img/items/img-sample5.jpg" alt="Image">
+                <img class="img img-block" src=<%=require("../img/items/img-sample5.jpg")%>  alt="Image">
               </div>
               <div class="media-body text-white">
                 <div class="title-desc">
