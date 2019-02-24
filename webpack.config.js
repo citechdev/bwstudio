@@ -21,7 +21,8 @@ module.exports = {
     },
     output: {
         filename: "js/[name].js",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist"),
+        publicPath: "/"
     },
     module: {
         rules: [
@@ -58,7 +59,7 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg|woff|eot|ttf)$/i,
                 loader: 'url-loader',
                 options: {
-                    limit: 1000,
+                    limit: 100000,
                     name: "img/[name].[ext]"
                 }  
             }
@@ -67,7 +68,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(pathsToClean),
         new MiniCssExtractPlugin({
-            filename: "css/main.css",
+            filename: "css/[name].css",
             chunkFilename: "id.css"
         }),
         // new OptimizeCSSAssetsPlugin({}),
@@ -94,6 +95,13 @@ module.exports = {
         ]),
         new CopyWebpackPlugin([
             {
+                from: path.resolve(__dirname,"src/fonts/"),
+                to: path.resolve(__dirname, "dist/fonts/"),
+                toType: "dir"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
                 from: path.resolve(__dirname,"src/css/plugins/bootstrap.min.css"),
                 to: path.resolve(__dirname, "dist/css/bootstrap.min.css"),
                 toType: "file"
@@ -110,6 +118,13 @@ module.exports = {
             {
                 from: path.resolve(__dirname,"src/css/plugins/style-default.css"),
                 to: path.resolve(__dirname, "dist/css/style-default.css"),
+                toType: "file"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname,"src/css/plugins/style-color2.css"),
+                to: path.resolve(__dirname, "dist/css/style-color2.css"),
                 toType: "file"
             }
         ])

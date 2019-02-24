@@ -1,4 +1,10 @@
 <!doctype html>
+<!--
+Website By Miradontsoa / MiVFX
+http://twitter.com/miradontsoa
+http://miradontsoa.com
+-->
+
 <html class="no-js" lang="en">
 
 <head>
@@ -15,15 +21,15 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Twitter Meta -->
-  <meta name="twitter:site" content="@miradontsoa">
+  <!-- <meta name="twitter:site" content="@miradontsoa">
   <meta name="twitter:creator" content="@miradontsoa">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Page Title">
   <meta name="twitter:description" content="Description of the page">
-  <meta name="twitter:image" content="/img/bg-default.jpg">
+  <meta name="twitter:image" content="/img/bg-default.jpg"> -->
 
   <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
+  <!-- <meta property="og:url" content="your website url here">
   <meta property="og:title" content="Page Title">
   <meta property="og:description" content="Description of the page">
   <meta property="og:type" content="website">
@@ -31,7 +37,7 @@
   <meta property="og:image:secure_url" content="/img/bg-default.jpg">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="630"> -->
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
@@ -55,7 +61,7 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <!-- add alt layout here -->
-  <!-- <link rel="stylesheet" href="./css/style-color2.css"> -->
+  <link rel="stylesheet" href="./css/style-default.css">
 
   <script src="./js/plugins/modernizr-2.7.1.min.js"></script>
 </head>
@@ -93,6 +99,7 @@
     <a class="navbar-brand" href="./#">
       <span class="logo">
         <img class="light-logo" src=<%=require("../img/logo.png")%> alt="Logo">
+        
       </span>
     </a>
     <!-- End of logo/brand -->
@@ -116,15 +123,15 @@
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="./index-style2.html#home">Home
+            <a class="nav-link" href="./index.html#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./gallery-style2.html">Gallery</a>
+            <a class="nav-link" href="./gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item-style2.html">Item</a>
+            <a class="nav-link" href="./item.html">Item</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./demo.html">Demo</a>
@@ -167,7 +174,7 @@
   <!-- BEGIN OF page cover -->
   <div class="page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default3.jpg")%> ></div>
+    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default.jpg")%> ></div>
 
     <!-- Transluscent mask as filter -->
     <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
@@ -176,7 +183,7 @@
   <!--END OF page cover -->
 
   <!-- BEGIN OF page main content -->
-  <main class="page-main page-fullpage main-anim scroll-slideshow" id="mainpage">
+  <main class="page-main page-fullpage main-anim " id="mainpage">
 
     <!-- Begin of home section -->
     <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
@@ -194,28 +201,20 @@
                 <h1 class="display-4 display-title home-title anim-blur anim-2 mt-4 mb-4">Atelieux
                   <span class="lite"></span>
                 </h1>
-              </div>
-
-              <!-- Begin of Home Action button -->
-              <div class="btns-action anim-4">
-                <div class="btns-divided">
-                  <div class="row no-gutters btns-divided">
-                    <div class="col-12 col-sm-6 side left-side">
-                      <a class="btn btn-divided btn-left" href="#about">
-                        <span class="b-title">About us</span>
-                        <span class="b-subtitle">What we do and what we offer for customers</span>
-                      </a>
-                    </div>
-                    <div class="col-12 col-sm-6 side right-side">
-                      <a class="btn btn-divided btn-right" href="#projects">
-                        <span class="b-title">Our Works</span>
-                        <span class="b-subtitle">Sample works and projects we are working on</span>
-                      </a>
-                    </div>
-                  </div>
+                <div class="mb-4">
+                  <p class="anim-3">Our company helps people and corporate.</p>
                 </div>
               </div>
-              <!-- End of Home Action button -->
+
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-outline-white btn-round" href="#about-us">
+                  About
+                </a>
+                <a class="btn btn-outline-white btn-round" href="#projects-page-1">
+                  Works
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -233,7 +232,7 @@
     <!-- End of home section -->
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="about">
 
       <!-- Begin of section wrapper -->
@@ -255,10 +254,10 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive fp-auto-height-responsive section-about-1"
+    <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-1"
     data-section="about-us">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>  ></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -301,10 +300,10 @@
     </div>
     <!-- End of description section -->
     <!-- Begin of description section -->
-    <div class="section section-description fp-auto-height-responsive fp-auto-height-responsive section-about-2"
+    <div class="section section-description fp-auto-height-responsive fp-auto-height no-footer section-about-2"
     data-section="mission">
 
-      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%> ></div>
+      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%>></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -350,7 +349,7 @@
 
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="services">
 
       <!-- Begin of section wrapper -->
@@ -372,7 +371,7 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of list services/features section -->
-    <div class="section section-list-feature fp-auto-height-responsive fp-auto-height-responsive"
+    <div class="section section-list-feature fp-auto-height-responsive fp-auto-height no-footer"
     data-section="services-list">
 
       <!-- Begin of section wrapper -->
@@ -435,7 +434,7 @@
     <!-- End of list services/features section -->
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="team">
 
       <!-- Begin of section wrapper -->
@@ -457,10 +456,10 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of description section -->
-    <div class="section section-team fp-auto-height-responsive fp-auto-height-responsive"
+    <div class="section section-team fp-auto-height-responsive fp-auto-height no-footer"
     data-section="team-list">
 
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%> ></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -471,7 +470,7 @@
             <div class="col-12 col-lg-4 center-vh end-h">
               <div class="img-frame-normal portrait">
                 <a href="team.html">
-                  <img class="img" src=<%=require("../img/items/img-people1.jpg")%>  alt="Image">
+                  <img class="img" src=<%=require("../img/items/img-sample1.jpg")%>  alt="Image">
                   <div class="legend decor text-center">
                     <h5 class="display-geo">Jane Lebron</h5>
                     <p class="small">Artist / Programer</p>
@@ -497,7 +496,7 @@
             <div class="col-12 col-lg-4 center-vh end-h">
               <div class="img-frame-normal portrait">
                 <a href="team.html">
-                  <img class="img" src=<%=require("../img/items/img-people3.jpg")%> alt="Image">
+                  <img class="img" src=<%=require("../img/items/img-people3.jpg")%>  alt="Image">
                   <div class="legend decor text-center">
                     <h5 class="display-geo">Julia Lacase</h5>
                     <p class="small">Speaker / Journalist</p>
@@ -524,7 +523,7 @@
     <!-- End of description section -->
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="projects">
 
       <!-- Begin of section wrapper -->
@@ -546,11 +545,11 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of projects/two-column section -->
-    <div class="section section-twoside fp-auto-height-responsive fp-auto-height-responsive content-white"
+    <div class="section section-twoside fp-auto-height-responsive fp-auto-height no-footer auto-height content-white"
     data-section="projects-page-1">
       <!-- Begin of a side : left-->
       <div class="section-side side-left side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample2.jpg")%>   >
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample2.jpg")%>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -566,7 +565,7 @@
 
                 <!-- Action button -->
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="./gallery-style2.html#project-item">
+                  <a class="btn btn-outline-white" href="./gallery.html#project-item">
                     <span class="text">View Project</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -584,7 +583,7 @@
 
       <!-- Begin of a side : right-->
       <div class="section-side side-right side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample10.jpg")%>   >
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample10.jpg")%>>
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -600,7 +599,7 @@
 
                 <!-- Action button -->
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="./gallery-style2.html#project-item">
+                  <a class="btn btn-outline-white" href="./gallery.html#project-item">
                     <span class="text">View Project</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -632,7 +631,7 @@
 
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="products">
 
       <!-- Begin of section wrapper -->
@@ -654,7 +653,7 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of list products section -->
-    <div class="section section-list-products fp-auto-height fp-auto-height-responsive"
+    <div class="section section-list-products fp-auto-height fp-auto-height no-footer"
     data-section="products-page-1">
 
       <!-- Begin of section wrapper -->
@@ -682,7 +681,7 @@
               <div class="content-wrapper">
                 <div class="img-frame-normal">
                   <div class="img-1">
-                    <img class="img" src=<%=require("../img/items/img-sample8.jpg")%>  alt="Image">
+                    <img class="img" src=<%=require("../img/items/img-sample8.jpg")%> alt="Image">
                   </div>
                 </div>
               </div>
@@ -789,14 +788,14 @@
     <!-- End of list products section -->
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="news-event">
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
         <!-- title -->
         <div class="section-title decor decor-anim text-center">
-          <h5 class="title">News and Events</h5>
+          <h5 class="title">News And Events</h5>
         </div>
 
         <!-- Arrows scroll down/up -->
@@ -811,7 +810,7 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of list grid section -->
-    <div class="section section-list-feature fp-auto-height fp-auto-height-responsive"
+    <div class="section section-list-feature fp-auto-height fp-auto-height no-footer"
     data-section="posts">
 
       <!-- Begin of section wrapper -->
@@ -849,7 +848,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Read More</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -873,7 +872,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Read More</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -897,7 +896,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Read More</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -921,7 +920,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Read More</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -946,8 +945,7 @@
     </div>
     <!-- End of list grid section -->
     <!-- Begin of list lines section -->
-    <div class="section section-list-lines fp-auto-height fp-auto-height-responsive"
-    data-section="posts-page2">
+    <div class="section section-list-lines fp-auto-height fp-auto-height no-footer" data-section="posts-page2">
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -984,7 +982,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Details</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -1008,7 +1006,7 @@
                 </div>
 
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
+                  <a class="btn btn-outline-white" href="item.html">
                     <span class="text">Details</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
@@ -1036,7 +1034,7 @@
 
 
     <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
+    <div class="section section-description section-title-layout fp-auto-height no-footer"
     data-section="contact">
 
       <!-- Begin of section wrapper -->
@@ -1058,7 +1056,7 @@
     </div>
     <!-- End of title section -->
     <!-- Begin of contact section -->
-    <div class="section section-contact fp-auto-height-responsive no-slide-arrows fp-auto-height-responsive"
+    <div class="section section-contact fp-auto-height-responsive no-slide-arrows fp-auto-height no-footer"
     data-section="contact-info">
 
       <!-- Begin of section wrapper -->
@@ -1157,7 +1155,7 @@
     </div>
     <!-- End of contact section -->
     <!-- Begin of register/login/signin section -->
-    <div class="section section-register fp-auto-height" data-section="register">
+    <div class="section section-register fp-auto-height no-footer" data-section="register">
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -1253,6 +1251,7 @@
   <script src="js/libraries/three.min.js"></script>
 	<script src="https://mamboleoo.be/learnThree/demos/OBJLoader.js"></script>
   <script src="./js/plugins/particles.min.js"></script>
+
 </body>
 
 </html>
