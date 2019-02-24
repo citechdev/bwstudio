@@ -1,4 +1,5 @@
 require("../css/main.scss");
+require("../css/style-color2.scss");
 
 'use strict';
 // var mainDocument = $(document);
