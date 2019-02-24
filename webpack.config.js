@@ -73,12 +73,37 @@ module.exports = {
         }),
         // new OptimizeCSSAssetsPlugin({}),
         new HtmlWebpackPlugin({
+            filename: "index.html",
             inject: true,
             template: path.resolve(__dirname, "src/views/index.html"),
             title: "BWStudio",
             devMode: devMode,
             minify: false
-      }),
+        }),
+        new HtmlWebpackPlugin({
+            filename: "gallery.html",
+            inject: true,
+            template: path.resolve(__dirname, "src/views/gallery.html"),
+            title: "BWStudio - Gallery",
+            devMode: devMode,
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: "item.html",
+            inject: true,
+            template: path.resolve(__dirname, "src/views/item.html"),
+            title: "BWStudio - Item",
+            devMode: devMode,
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: "team.html",
+            inject: true,
+            template: path.resolve(__dirname, "src/views/team.html"),
+            title: "BWStudio - Team",
+            devMode: devMode,
+            minify: false
+        }),
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname,"src/js/plugins/"),
