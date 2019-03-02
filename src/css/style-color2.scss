@@ -52,7 +52,7 @@ Sample CSS overwriting main.css rules
         bottom: 0;
         opacity: 0;
         transition: 0.3s;
-        background-image: linear-gradient(to right, #B3315F, #3A0075);
+        background-image: linear-gradient(to right, #000, rgba(0,0,0,0));
     }
     &.scrolled:after{
         opacity: .5;
