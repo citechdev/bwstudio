@@ -42,6 +42,9 @@
     .section-content{
         // height: 100%;
         margin-top: 300px;
+        @media screen and (max-width: 480px){
+            margin-top: 200px;
+        }
         .bordered{
             border-bottom: 2px solid currentColor;
         }
@@ -73,29 +76,6 @@
                 height: 160px;
             }
         }
-        h2{
-            // font-family: $condensed;
-            // font-size: $text-xxlarge;
-            // font-weight: 300;
-            // &.big{
-            //     font-size: $text-xxxxlarge;
-            //     font-weight: bold;
-            //     line-height: 1;
-            // }
-        }
-        h4{
-            // font-family: $sans;
-            // font-size: $text-size;
-            // font-weight: normal;
-            // strong{
-            //     color: $primary;
-            // }
-        }
-        h3{
-            // font-family: $sans;
-            // font-size: $text-large;
-            // font-weight: 300;
-        }
     }
 }
 
@@ -103,4 +83,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    @media screen and (max-width: 480px){
+        top: -70px;
+    }
 }

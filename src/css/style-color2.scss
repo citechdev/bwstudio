@@ -80,3 +80,23 @@ Sample CSS overwriting main.css rules
         margin: auto;
     }
 }
+
+.vr-ar{
+    img{
+        width:400px;
+        margin-left: 100px;
+        @media screen and (max-width: 760px){
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
+.exterior-content,
+.interior-content{
+    img{
+        width: 520px;
+        @media screen and (max-width: 760px){
+            width: 100%;
+        }
+    }
+}
