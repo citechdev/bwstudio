@@ -23,10 +23,6 @@ Sample CSS overwriting main.css rules
 .display-title{
     font-family: $geo;
 }
-.section-home{
-    .display-title{
-    }
-}
 .section-title .title{
     font-family: $geo;
     text-transform: none;
@@ -73,5 +69,14 @@ Sample CSS overwriting main.css rules
             color: currentColor;
             border-color: currentColor;
         }
+    }
+}
+
+.logo-bwstudio{
+    width:400px;
+    margin: auto auto auto 40px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        margin: auto;
     }
 }
