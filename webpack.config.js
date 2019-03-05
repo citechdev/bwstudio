@@ -89,6 +89,22 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
+            filename: "gallery_int.html",
+            inject: true,
+            template: path.resolve(__dirname, "src/views/gallery_int.html"),
+            title: "BWStudio - Gallery Interiors",
+            devMode: devMode,
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: "gallery_ext.html",
+            inject: true,
+            template: path.resolve(__dirname, "src/views/gallery_ext.html"),
+            title: "BWStudio - Gallery Exteriors",
+            devMode: devMode,
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
             filename: "item.html",
             inject: true,
             template: path.resolve(__dirname, "src/views/item.html"),
