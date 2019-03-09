@@ -23,10 +23,6 @@ Sample CSS overwriting main.css rules
 .display-title{
     font-family: $geo;
 }
-.section-home{
-    .display-title{
-    }
-}
 .section-title .title{
     font-family: $geo;
     text-transform: none;
@@ -52,7 +48,7 @@ Sample CSS overwriting main.css rules
         bottom: 0;
         opacity: 0;
         transition: 0.3s;
-        background-image: linear-gradient(to right, #B3315F, #3A0075);
+        background-image: linear-gradient(to right, #000, rgba(0,0,0,0));
     }
     &.scrolled:after{
         opacity: .5;
@@ -72,6 +68,35 @@ Sample CSS overwriting main.css rules
         .btn-outline-black{
             color: currentColor;
             border-color: currentColor;
+        }
+    }
+}
+
+.logo-bwstudio{
+    width:400px;
+    margin: auto auto auto 40px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.vr-ar{
+    img{
+        width:400px;
+        margin-left: 100px;
+        @media screen and (max-width: 760px){
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
+.exterior-content,
+.interior-content{
+    img{
+        width: 520px;
+        @media screen and (max-width: 760px){
+            width: 100%;
         }
     }
 }

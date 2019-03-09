@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
   <!-- Page Title Here -->
-  <title>Atelieux - A portfolio / onepage template</title>
+  <title>Black Wolf Studio</title>
 
   <!-- Meta -->
   <!-- Page Description Here -->
@@ -20,44 +20,44 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Page Title">
   <meta name="twitter:description" content="Description of the page">
-  <meta name="twitter:image" content="/img/bg-default.jpg">
+  <meta name="twitter:image" content="./img/bg-default.jpg">
 
   <!-- Facebook Meta -->
   <meta property="og:url" content="your website url here">
   <meta property="og:title" content="Page Title">
   <meta property="og:description" content="Description of the page">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/img/bg-default.jpg">
-  <meta property="og:image:secure_url" content="/img/bg-default.jpg">
+  <meta property="og:image" content="./img/bg-default.jpg">
+  <meta property="og:image:secure_url" content="./img/bg-default.jpg">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/roboto/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/playfair/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/ionicons.min.css">
-  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/opensans/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/montserrat/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/roboto/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/playfair/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/ionicons.min.css">
+  <link type="text/css" rel="stylesheet" href="./fonts/font-awesome.min.css">
 
   <!-- plugins CSS style -->
-  <link rel="stylesheet" href="./css/pageloader.css">
+  <link type="text/css" rel="stylesheet" href="./css/pageloader.css">
 
   <!-- Uncomment below to load individualy plugins CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./js/plugins/swiper.min.css">
-  <link rel="stylesheet" href="./js/plugins/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./js/plugins/vegas.min.css">
+  <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="./js/plugins/swiper.min.css">
+  <link type="text/css" rel="stylesheet" href="./js/plugins/jquery.fullpage.min.css">
+  <link type="text/css" rel="stylesheet" href="./js/plugins/vegas.min.css">
 
   <!-- Main CSS files -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
 
   <!-- add alt layout here -->
-  <!-- <link rel="stylesheet" href="./css/style-color2.css"> -->
+  <!-- <link type="text/css" rel="stylesheet" href="./css/style-color2.css"> -->
 
-  <script src="./js/plugins/modernizr-2.7.1.min.js"></script>
+  <script type="text/javascript" src="./js/plugins/modernizr-2.7.1.min.js"></script>
 </head>
 
 <body id="menu" class="body-page">
@@ -91,8 +91,8 @@
 
     <!-- Begin of logo/brand -->
     <a class="navbar-brand" href="./#">
-      <span class="logo">
-        <img class="light-logo" src=<%=require("../img/logo.png")%> alt="Logo">
+      <span>
+        <img width="50px" src=<%=require("../img/logohead.png")%> alt="Logo">
       </span>
     </a>
     <!-- End of logo/brand -->
@@ -105,9 +105,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
+         <!--<li class="nav-item">
             <a class="nav-link" href="#">Demo</a>
-          </li>
+          </li>-->
         </ul>
       </nav>
       <!-- End of top menu -->
@@ -121,13 +121,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./gallery.html">Gallery</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item-style2.html">Item</a>
+            <a class="nav-link" href="#services-list">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Demo</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -165,9 +165,13 @@
   <!-- END OF site header Menu-->
 
   <!-- BEGIN OF page cover -->
+
+  <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
+
   <div class="page-cover">
     <!-- Cover Background -->
-    <div class="cover-bg bg-img" data-image-src=<%=require("../img/bg-default3.jpg")%> ></div>
+      
+    <!--<div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bg-default-bws.jpg")%>  ></div>-->
 
     <!-- Transluscent mask as filter -->
     <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
@@ -181,6 +185,7 @@
     <!-- Begin of home section -->
     <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
     data-section="home">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bkone.jpg")%>  ></div>
 
       <div id="hero" class="hero"></div>
       <!-- Begin of section wrapper -->
@@ -191,7 +196,8 @@
             <div class="col-12 col-lg-12 text-center">
               <!-- title and description -->
               <div class="title-desc mb-0">
-                <h1 class="display-4 display-title home-title anim-blur anim-2 mt-4 mb-4">Atelieux
+                <h1 class="display-4 display-title home-title anim-blur anim-2 mt-4 mb-4">
+                    <img class="img logo-bwstudio" src=<%=require("../img/logo-bws.png")%>  alt="Image">
                   <span class="lite"></span>
                 </h1>
               </div>
@@ -221,12 +227,12 @@
         </div>
 
         <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
+        <!--<footer class="section-footer scrolldown">
           <a class="down">
             <span class="icon"></span>
             <span class="txt">Learn more about us</span>
           </a>
-        </footer>
+        </footer>-->
       </div>
       <!-- End of section wrapper -->
     </div>
@@ -235,6 +241,7 @@
     <!-- Begin of title section -->
     <div class="section section-description section-title-layout fp-auto-height-responsive"
     data-section="about">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -257,8 +264,8 @@
     <!-- Begin of description section -->
     <div class="section section-description fp-auto-height-responsive fp-auto-height-responsive section-about-1"
     data-section="about-us">
-
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%>  ></div>
+      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
+     
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
@@ -268,9 +275,10 @@
             <div class="col-12 col-md-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h2 class="display-3 display-title anim-2 decor">Design art</h2>
-                <p class="anim-3">This is just a placeholder text. And this is a Bootstrap 4 based
-                  template, helping you to build modern and beautiful websites.</p>
+                <h2 class="display-3 display-title anim-2 decor">Interior 3d Visualization</h2>
+                <p class="anim-3">Discover how the room/apartment will look like with all the furniture, 
+                  lights, details, as if it were a real photo. Thanks to the realism of our textures, 
+                  the 3d visualization will look just the same as the finished project.</p>
               </div>
 
               <!-- Action button -->
@@ -284,6 +292,10 @@
               </div>
             </div>
 
+            <div class="col-12 col-md-6 text-left interior-content">
+                <img class="img" src=<%=require("../img/interior.png")%>  alt="Image">
+            </div>
+
           </div>
         </div>
 
@@ -293,7 +305,7 @@
         <footer class="section-footer scrolldown">
           <a class="down">
             <span class="icon"></span>
-            <span class="txt">Mission</span>
+            <span class="txt">Scroll</span>
           </a>
         </footer>
       </div>
@@ -304,20 +316,24 @@
     <div class="section section-description fp-auto-height-responsive fp-auto-height-responsive section-about-2"
     data-section="mission">
 
-      <div class="section-cover-full bg-img bg-pos-left cover-anim" data-image-src=<%=require("../img/sections/bg-1.png")%> ></div>
-
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
 
         <!-- content -->
         <div class="section-content anim">
           <div class="row justify-content-md-end">
+
+            <div class="col-12 col-md-6 text-left exterior-content">
+              <img class="img" src=<%=require("../img/exterior.png")%>  alt="Image">
+            </div>
+
             <div class="col-12 col-md-6 text-left pl-lg-0">
               <!-- title and description -->
               <div class="title-desc">
-                <h2 class="display-3 display-title anim-2 decor">Help brands</h2>
-                <p class="anim-3">This is just a placeholder text. And this is a Bootstrap 4 based
-                  template, helping you to build modern and beautiful websites.</p>
+                <h2 class="display-3 display-title anim-2 decor">Exterior 3d Visualization</h2>
+                <p class="anim-3">We make light adjustments (daylight, night lights, artificial lighting), texturing, add landscape, 
+                  build roads, add cars and people to create photo-realistic images of your project.</p>
               </div>
 
               <!-- Action button -->
@@ -329,6 +345,57 @@
                   </span>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Scroll</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
+
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive fp-auto-height-responsive section-about-1"
+    >
+
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-md-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-3 display-title anim-2 decor">VR/AR<br>MixedReality</h2>
+                <p class="anim-3">3D Visualization has always been one of the most effective ways of presenting an exterior or
+                  interior project. Frequently architects, designers or realtor use still images for this purpose.
+                  Move beyond that, go interactive today and benefit from architectural virtual reality tours.</p>
+              </div>
+
+              <!-- Action button -->
+              <div class="btns-action anim-4">
+                <a class="btn btn-outline-white" href="#projects">
+                  <span class="text">Our works</span>
+                  <span class="icon">
+                    <i class="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 text-left vr-ar">
+                <img class="img" src=<%=require("../img/vr.png")%>  alt="Image">
             </div>
 
           </div>
@@ -348,10 +415,10 @@
     </div>
     <!-- End of description section -->
 
-
     <!-- Begin of title section -->
     <div class="section section-description section-title-layout fp-auto-height-responsive"
     data-section="services">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -374,6 +441,7 @@
     <!-- Begin of list services/features section -->
     <div class="section section-list-feature fp-auto-height-responsive fp-auto-height-responsive"
     data-section="services-list">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -385,36 +453,36 @@
             <div class="col-12 col-lg-4">
               <a class="item media media-service" href="./#">
                 <div class="img">
-                  <i class="icon ion-code-working"></i>
+                    <img width="50px" style="opacity: 0.2" src=<%=require("../img/branding.png")%> alt="Logo">
                 </div>
                 <div class="media-body">
-                  <h4 class="">Coding</h4>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <h5 class="">Branding</h5>
+                  <!--<p>An awesome service that we offer to you. This is just a placeholder
+                    text.</p>-->
                 </div>
               </a>
             </div>
             <div class="col-12 col-lg-4">
               <a class="item media media-service" href="./#">
                 <div class="img">
-                  <i class="icon ion-ios-cog-outline"></i>
+                    <img width="50px" style="opacity: 0.2" src=<%=require("../img/webdesign.png")%> alt="Logo">
                 </div>
                 <div class="media-body">
-                  <h4 class="">Mechanics</h4>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <h5 class="">Web Design</h5>
+                  <!--<p>An awesome service that we offer to you. This is just a placeholder
+                    text.</p>-->
                 </div>
               </a>
             </div>
             <div class="col-12 col-lg-4">
               <a class="item media media-service" href="./#">
                 <div class="img">
-                  <i class="icon ion-ios-analytics-outline"></i>
+                    <img width="50px" style="opacity: 0.2" src=<%=require("../img/media.png")%> alt="Logo">
                 </div>
                 <div class="media-body">
-                  <h4 class="">Analytics</h4>
-                  <p>An awesome service that we offer to you. This is just a placeholder
-                    text.</p>
+                  <h5 class="">Media</h5>
+                  <!--<p>An awesome service that we offer to you. This is just a placeholder
+                    text.</p>-->
                 </div>
               </a>
             </div>
@@ -434,98 +502,11 @@
     </div>
     <!-- End of list services/features section -->
 
-    <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
-    data-section="team">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- title -->
-        <div class="section-title decor decor-anim text-center">
-          <h5 class="title">Team</h5>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of title section -->
-    <!-- Begin of description section -->
-    <div class="section section-team fp-auto-height-responsive fp-auto-height-responsive"
-    data-section="team-list">
-
-      <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/sections/bg-2.png")%> ></div>
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-
-        <!-- content -->
-        <div class="section-content anim">
-          <div class="row">
-            <!-- img item -->
-            <div class="col-12 col-lg-4 center-vh end-h">
-              <div class="img-frame-normal portrait">
-                <a href="team.html">
-                  <img class="img" src=<%=require("../img/items/img-people1.jpg")%>  alt="Image">
-                  <div class="legend decor text-center">
-                    <h5 class="display-geo">Jane Lebron</h5>
-                    <p class="small">Artist / Programer</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- img item -->
-            <div class="col-12 col-lg-4 center-vh end-h">
-              <div class="img-frame-normal portrait">
-                <a href="team.html">
-                  <img class="img" src=<%=require("../img/items/img-people2.jpg")%>  alt="Image">
-                  <div class="legend decor text-center">
-                    <h5 class="display-geo">Bob Jackson</h5>
-                    <p class="small">Project Manager</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- img item -->
-            <div class="col-12 col-lg-4 center-vh end-h">
-              <div class="img-frame-normal portrait">
-                <a href="team.html">
-                  <img class="img" src=<%=require("../img/items/img-people3.jpg")%> alt="Image">
-                  <div class="legend decor text-center">
-                    <h5 class="display-geo">Julia Lacase</h5>
-                    <p class="small">Speaker / Journalist</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Mission</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of description section -->
 
     <!-- Begin of title section -->
     <div class="section section-description section-title-layout fp-auto-height-responsive"
     data-section="projects">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
@@ -550,7 +531,7 @@
     data-section="projects-page-1">
       <!-- Begin of a side : left-->
       <div class="section-side side-left side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample2.jpg")%>   >
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/gall_int/INT_one.jpg")%>   >
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -559,15 +540,15 @@
               <div class="col-12 text-left text-white">
                 <!-- title and description -->
                 <div class="title-desc">
-                  <h2 class="display-3 display-title anim-2 decor">Branding</h2>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
+                  <h2 class="display-5 display-title anim-2 decor">Interior <br>Renderings
+                  </h2>
+                  <p class="anim-3">View our most recent 3d interior renderings projects</p>
                 </div>
 
                 <!-- Action button -->
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="./gallery.html#project-item">
-                    <span class="text">View Project</span>
+                  <a class="btn btn-outline-white" href="./gallery_int.html">
+                    <span class="text">View Projects</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
                     </span>
@@ -584,7 +565,7 @@
 
       <!-- Begin of a side : right-->
       <div class="section-side side-right side-anim">
-        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/items/img-sample10.jpg")%>   >
+        <div class="section-cover mask-black bg-img" data-image-src=<%=require("../img/gall_ext/EXT_one.jpg")%>   >
         </div>
         <div class="section-wrapper">
           <!-- content -->
@@ -593,15 +574,14 @@
               <div class="col-12 text-left text-white">
                 <!-- title and description -->
                 <div class="title-desc">
-                  <h2 class="display-3 display-title anim-2 decor">Decor</h2>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
+                  <h2 class="display-5 display-title anim-2 decor">Exterior<br> Renderings</h2>
+                  <p class="anim-3">View our most recent 3d exterior renderings projects</p>
                 </div>
 
                 <!-- Action button -->
                 <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="./gallery.html#project-item">
-                    <span class="text">View Project</span>
+                  <a class="btn btn-outline-white" href="./gallery_ext.html">
+                    <span class="text">View Projects</span>
                     <span class="icon">
                       <i class="arrow-right"></i>
                     </span>
@@ -631,414 +611,13 @@
     <!-- End of projects/two-column section -->
 
 
-    <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
-    data-section="products">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- title -->
-        <div class="section-title decor decor-anim text-center">
-          <h5 class="title">Products</h5>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of title section -->
-    <!-- Begin of list products section -->
-    <div class="section section-list-products fp-auto-height fp-auto-height-responsive"
-    data-section="products-page-1">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- content -->
-        <div class="section-content anim">
-          <!-- title content -->
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-3 display-title anim-1">Arts</h2>
-                <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                  awareness throught this template.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- decor -->
-          <div class="title-decor"></div>
-
-          <!-- an item -->
-          <div id="product-item-1" class="row no-gutters row-product">
-            <div class="col-12 col-lg-6 order-1 order-lg-1 side-left center-vh">
-              <div class="content-wrapper">
-                <div class="img-frame-normal">
-                  <div class="img-1">
-                    <img class="img" src=<%=require("../img/items/img-sample8.jpg")%>  alt="Image">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 order-2 order-lg-2 side-right center-vh">
-              <div class="content-wrapper">
-                <div class="title-desc">
-                  <h3 class="display-3 display-title anim-1 decor">Paint</h3>
-                  <h4 class="display-subtitle anim-2">200 USD</h4>
-                  <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-                <!-- Action button -->
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="#">
-                    <span class="text">Buy now</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- an item -->
-          <div id="product-item-2" class="row no-gutters row-product">
-            <div class="col-12 col-lg-6 order-1 order-lg-2 side-right center-vh">
-              <div class="content-wrapper">
-                <div class="img-frame-normal">
-                  <div class="img-1">
-                    <img class="img" src=<%=require("../img/items/img-sample9.jpg")%>  alt="Image">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 order-2 order-lg-1 side-left  center-vh">
-              <div class="content-wrapper">
-                <div class="title-desc">
-                  <h3 class="display-3 display-title anim-1 decor">Software</h3>
-                  <h4 class="display-subtitle anim-2">100 EUR</h4>
-                  <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-                <!-- Action button -->
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="#">
-                    <span class="text">Buy now</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- an item -->
-          <div id="product-item-3" class="row no-gutters row-product mb-0">
-            <div class="col-12 col-lg-6 order-1 order-lg-1 side-left center-vh">
-              <div class="content-wrapper">
-                <div class="img-frame-normal">
-                  <div class="img-1">
-                    <img class="img" src=<%=require("../img/items/img-sample10.jpg")%>  alt="Image">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 order-2 order-lg-2 side-right  center-vh">
-              <div class="content-wrapper">
-                <div class="title-desc">
-                  <h3 class="display-3 display-title anim-1 decor">Design
-                    <span class="lite"></span>
-                  </h3>
-                  <h4 class="display-subtitle anim-2">300 RMB</h4>
-                  <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-                <!-- Action button -->
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="#">
-                    <span class="text">Buy now</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list products section -->
-
-    <!-- Begin of title section -->
-    <div class="section section-description section-title-layout fp-auto-height-responsive"
-    data-section="news-event">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- title -->
-        <div class="section-title decor decor-anim text-center">
-          <h5 class="title">News and Events</h5>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of title section -->
-    <!-- Begin of list grid section -->
-    <div class="section section-list-feature fp-auto-height fp-auto-height-responsive"
-    data-section="posts">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- content -->
-        <div class="section-content anim">
-          <!-- title content -->
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-3 display-title anim-1">News &amp; Blog</h2>
-                <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                  awareness throught this template.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- decor -->
-          <div class="title-decor"></div>
-
-          <!-- post list -->
-          <div class="post-list grid-1 grid-lg-2 anim-list">
-            <!-- an item -->
-            <div class="item media media-post">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample3.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-title anim-2">Alpha Zeta</h3>
-                  <h4 class="anim-1 display-subtitle">Cloud App</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Read More</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- an item -->
-            <div class="item media media-post">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample8.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-title anim-2">Gamma Target</h3>
-                  <h4 class="anim-1 display-subtitle">Website</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Read More</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- an item -->
-            <div class="item media media-post">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample5.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-title anim-2">Epsi Project</h3>
-                  <h4 class="anim-1 display-subtitle">Website</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Read More</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- an item -->
-            <div class="item media media-post">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample6.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-title anim-2">Delta Work</h3>
-                  <h4 class="anim-1 display-subtitle">Website</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Read More</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list grid section -->
-    <!-- Begin of list lines section -->
-    <div class="section section-list-lines fp-auto-height fp-auto-height-responsive"
-    data-section="posts-page2">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-        <!-- content -->
-        <div class="section-content anim">
-          <!-- title content -->
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-3 display-title anim-1">Events</h2>
-                <p class="anim-2">This is just a placeholder text. We help people to achieve brand
-                  awareness throught this template.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- decor -->
-          <div class="title-decor"></div>
-
-          <!-- begin of lines-list -->
-          <div class="lines-list grid-1 anim-list">
-            <!-- an item -->
-            <div class="item media media-line">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample6.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-3 display-title anim-2">Alpha Zeta</h3>
-                  <h4 class="anim-1 display-subtitle">01 Jan 2020</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Details</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- an item -->
-            <div class="item media media-line">
-              <div class="media-img mask-black">
-                <img class="img img-block" src=<%=require("../img/items/img-sample5.jpg")%>  alt="Image">
-              </div>
-              <div class="media-body text-white">
-                <div class="title-desc">
-                  <h3 class="display-3 display-title anim-2">Gamma Target</h3>
-                  <h4 class="anim-1 display-subtitle">02 Feb 2030</h4>
-                  <p class="anim-3">This is just a placeholder text. We help people to achieve brand
-                    awareness throught this template.</p>
-                </div>
-
-                <div class="btns-action anim-4">
-                  <a class="btn btn-outline-white" href="item-style2.html">
-                    <span class="text">Details</span>
-                    <span class="icon">
-                      <i class="arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- end of lines-list -->
-
-        <!-- Arrows scroll down/up -->
-        <footer class="section-footer scrolldown">
-          <a class="down">
-            <span class="icon"></span>
-            <span class="txt">Scroll</span>
-          </a>
-        </footer>
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list lines section -->
+   
 
 
     <!-- Begin of title section -->
     <div class="section section-description section-title-layout fp-auto-height-responsive"
     data-section="contact">
-
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper with-margin">
         <!-- title -->
@@ -1060,6 +639,7 @@
     <!-- Begin of contact section -->
     <div class="section section-contact fp-auto-height-responsive no-slide-arrows fp-auto-height-responsive"
     data-section="contact-info">
+    <div class="section-cover-full bg-img bg-pos-right cover-anim" data-image-src=<%=require("../img/bktwo.jpg")%>  ></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper  with-margin">
@@ -1071,15 +651,14 @@
               <!-- title and description -->
               <div class="title-desc">
                 <div class="anim-2">
-                  <p>For questions about our company and products found on our stores.</p>
+                  <p>Please contact us if you have questions about our services</p>
                 </div>
                 <div class="address-container anim-3">
                   <div class="row">
                     <div class="col-12 col-md-6 col-lg-6">
                       <h4 class="display-condensed lite">Contact</h4>
-                      <p>Call: 01 234 567 89</p>
-                      <p>Email: ouremail@domain.com</p>
-
+                      <p>Call: +1(706)888-3277</p>
+                      <p>Email: mail@bws.design</p>
                       <div class="icons icons-margin">
                         <a class="btn-icon" href="#">
                           <i class="icon fa fa-instagram"></i>
@@ -1092,9 +671,8 @@
                     <div class="col-12 col-md-6 col-lg-6">
                       <h4 class="display-condensed lite">Address</h4>
                       <p>
-                        Company address
-                        <br>12 Street Turning Place
-                        <br>South Est, Antartica
+                            2972 Ashlyn Pointe Dr
+                        <br>Atlanta, GA 30340
                       </p>
                     </div>
                   </div>
@@ -1105,12 +683,12 @@
           <!-- end of left content -->
 
           <!-- begin of right content -->
-          <div class="col-12 col-lg-4 center-v end-h">
-            <!-- content -->
+          <!--<div class="col-12 col-lg-4 center-v end-h">
+            
             <div class="section-content anim text-left fullwidth autowidth-lg">
               <div class="message-form">
                 <div class="form-container form-container-card">
-                  <!-- Message form container -->
+                  
                   <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php"
                   id="message_form">
                     <div class="form-group name">
@@ -1140,7 +718,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
           <!-- end of right content -->
         </div>
 
@@ -1148,65 +726,14 @@
       <!-- End of section wrapper -->
 
       <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
+      <!--<footer class="section-footer scrolldown">
         <a class="down">
           <span class="icon"></span>
           <span class="txt">Subscribe</span>
         </a>
-      </footer>
+      </footer>-->
     </div>
     <!-- End of contact section -->
-    <!-- Begin of register/login/signin section -->
-    <div class="section section-register fp-auto-height" data-section="register">
-
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper with-margin">
-
-        <!-- content -->
-        <div class="section-content no-anim">
-
-          <div class="row">
-
-            <div class="col-12">
-              <!-- Registration form container-->
-              <form class="send_email_form form-container form-container-transparent form-container-white"
-              method="post" action="ajaxserver/serverfile.php">
-                <div class="form-desc">
-                  <p class="invite  anim-3">Don't miss any news via email ! Register email if you agree :</p>
-                </div>
-                <div class="form-input  anim-4">
-                  <div class="row">
-                    <div class="col-12 col-md-8 col-lg-10">
-                      <div class="form-group form-success-gone">
-                        <input id="reg-email" name="email" class="form-control-line form-control-white" type="email"
-                        required placeholder="your@email.address" data-validation-type="email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-2">
-                      <div class="btns-action anim-3 mt-md-0">
-                        <button id="submit-email" name="submit_email" class="btn btn-outline-white btn-full form-success-gone">
-                          <span class="text">Accept</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group mb-0">
-                    <div>
-                      <p class="email-ok invisible form-text-feedback form-success-visible">Your email has been registred, thank you.</p>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- end of content -->
-      </div>
-      <!-- End of section wrapper -->
-
-    </div>
-    <!-- End of register/login/signin section -->
 
   </main>
   <!-- END OF page main content -->
@@ -1214,13 +741,13 @@
   <!-- BEGIN OF page footer -->
   <footer id="site-footer" class="page-footer d-none d-lg-block">
     <!-- Left content -->
-    <div class="footer-left">
+    <!---<div class="footer-left">
       <p class="note">Atelieux by
         <a href="http://highhay.com">
           <span class="marked">Mivfx</span>
         </a>
       </p>
-    </div>
+    </div>-->
 
     <!-- Right content -->
     <div class="footer-right">
@@ -1246,13 +773,13 @@
   <!-- END OF site footer -->
 
   <!-- scripts -->
-  <script src="./js/plugins/jquery-1.12.4.min.js"></script>
-  <script src="./js/plugins/slick.min.js"></script>
-  <script src="./js/plugins/scrolloverflow.min.js"></script>
-  <script src="./js/plugins/all.js"></script>
-  <script src="js/libraries/three.min.js"></script>
-	<script src="https://mamboleoo.be/learnThree/demos/OBJLoader.js"></script>
-  <script src="./js/plugins/particles.min.js"></script>
+  <script type="text/javascript" src="./js/plugins/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/plugins/slick.min.js"></script>
+  <script type="text/javascript" src="./js/plugins/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="./js/plugins/all.js"></script>
+  <script type="text/javascript" src="./js/libraries/three.min.js"></script>
+	<script type="text/javascript" src="https://mamboleoo.be/learnThree/demos/OBJLoader.js"></script>
+  <script type="text/javascript" src="./js/plugins/particles.min.js"></script>
 </body>
 
 </html>

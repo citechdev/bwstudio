@@ -186,6 +186,7 @@ $(document).on('ready', function () {
 				// },
 				afterRender: function () {
 					mainPage.addClass('page-rendered');
+					$(".navbar-brand img").fadeOut();
 
 					// Fix video background
 					videoBg.maximage('maxcover');
@@ -229,6 +230,12 @@ $(document).on('ready', function () {
 					$.fn.fullpage.reBuild();
 				},
 				onLeave: function (index, nextIndex, direction) {
+					if(nextIndex == 1){
+						$(".navbar-brand img").fadeOut();
+					}else{
+						$(".navbar-brand img").fadeIn();
+					}
+					
 					// Behavior when a full page is leaved
 					arrowElem.addClass('gone');
 					pageElem.addClass('transition');
