@@ -21,8 +21,7 @@ module.exports = {
     },
     output: {
         filename: "js/[name].js",
-        path: path.resolve(__dirname, "dist"),
-        publicPath: "/"
+        path: path.resolve(__dirname, "dist")
     },
     module: {
         rules: [
@@ -59,7 +58,7 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg|woff|eot|ttf)$/i,
                 loader: 'url-loader',
                 options: {
-                    limit: 100000,
+                    limit: 1000,
                     name: "img/[name].[ext]"
                 }  
             }

@@ -230,7 +230,6 @@ $(document).on('ready', function () {
 					$.fn.fullpage.reBuild();
 				},
 				onLeave: function (index, nextIndex, direction) {
-					console.log(index,nextIndex)
 					if(nextIndex == 1){
 						$(".navbar-brand img").fadeOut();
 					}else{
