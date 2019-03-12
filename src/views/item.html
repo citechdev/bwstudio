@@ -12,8 +12,13 @@ http://miradontsoa.com
 
   <!-- Page Title Here -->
   <title>Atelieux - A portfolio / onepage template</title>
-
   <!-- Meta -->
+  
+  <!-- Favicon -->
+  <% if (!htmlWebpackPlugin.files.favicon) { %>
+    <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>" type="image/x-icon">
+  <% } %>
+
   <!-- Page Description Here -->
   <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
 
