@@ -38,6 +38,14 @@
             }
         }
     }
+
+    .interior-style{
+        margin-left: 60px;
+        @media screen and (max-width: 768px){
+            margin-left:0;
+        }
+    } 	
+
     .title-decor{
         border-bottom: 1px solid currentColor;
         opacity: 0.2;
