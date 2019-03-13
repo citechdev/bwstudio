@@ -77,7 +77,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/index.html"),
             title: "BWStudio",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new HtmlWebpackPlugin({
             filename: "gallery.html",
@@ -85,7 +86,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/gallery.html"),
             title: "BWStudio - Gallery",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new HtmlWebpackPlugin({
             filename: "gallery_int.html",
@@ -93,7 +95,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/gallery_int.html"),
             title: "BWStudio - Gallery Interiors",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new HtmlWebpackPlugin({
             filename: "gallery_ext.html",
@@ -101,7 +104,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/gallery_ext.html"),
             title: "BWStudio - Gallery Exteriors",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new HtmlWebpackPlugin({
             filename: "item.html",
@@ -109,7 +113,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/item.html"),
             title: "BWStudio - Item",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new HtmlWebpackPlugin({
             filename: "team.html",
@@ -117,7 +122,8 @@ module.exports = {
             template: path.resolve(__dirname, "src/views/team.html"),
             title: "BWStudio - Team",
             devMode: devMode,
-            minify: false
+            minify: false,
+            favicon: path.resolve(__dirname, "src/img/favicon.png"),
         }),
         new CopyWebpackPlugin([
             {
