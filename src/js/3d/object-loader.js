@@ -51,7 +51,8 @@ var objObject = require("./bwws.obj");
 
         loader = new THREE.OBJLoader();
         loader.load(objObject, function (obj) {
-            obj.scale.set(2.9,2.9,2.9);
+            obj.scale.set(1.2,1.2,1.2);
+            obj.position.set(0,60,0);
             scene.add(obj);
         })
 
