@@ -261,6 +261,8 @@
                         transform: none;
                         transition-delay: 0.35s;
                         opacity: 1;
+                        //using in interiors and exteriors
+                        font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
                     }
                     .anim-4 {
                         opacity: 1;

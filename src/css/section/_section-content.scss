@@ -39,6 +39,10 @@
         }
     }
 
+    .title-info-intext{
+        position:absolute; left: calc(10%); bottom:calc(7%);
+    }
+
     .interior-style{
         margin-left: 60px;
         @media screen and (max-width: 768px){
