@@ -40,7 +40,7 @@
     }
 
     .title-info-intext{
-        position:absolute; left: calc(10%); bottom:calc(7%);
+        margin-bottom: 10%;
     }
 
     .interior-style{
@@ -197,6 +197,16 @@
         }
     }
 }
+
+body.interior-rendering{
+    .slide{
+        &.slide-gallery{
+            justify-content: flex-end;
+        }
+    }
+}
+
+
 .section-gallery{
     padding: 0;
 }
