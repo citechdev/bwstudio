@@ -41,6 +41,9 @@
 
     .title-info-intext{
         margin-bottom: 5%;
+        @media screen and (max-width: 768px){
+            margin-bottom: 20%;
+        }
     }
 
     .interior-style{
