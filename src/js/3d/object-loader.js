@@ -16,8 +16,11 @@ var objObject = require("./bwws.obj");
     var windowHalfX = window.innerWidth / 2;
     var windowHalfY = window.innerHeight / 2;
 
-    init();
-    animate();
+    if (document.body.classList.contains('home-page-site')) {
+        init();
+        animate();
+    }
+    
 
     function init() {
         var hero = document.getElementById("hero");
