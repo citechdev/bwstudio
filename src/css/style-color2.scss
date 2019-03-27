@@ -73,7 +73,7 @@ Sample CSS overwriting main.css rules
 }
 
 .logo-bwstudio{
-    width:400px;
+    width:calc(45%);
     margin: auto auto auto 40px;
     @media screen and (max-width: 768px){
         width: 100%;
