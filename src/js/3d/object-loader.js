@@ -1,4 +1,4 @@
-var objObject = require("./bwws.obj");
+var objObject = require("./bwws_old.obj");
 
 (function() {
     "use strict";
@@ -53,9 +53,23 @@ var objObject = require("./bwws.obj");
         scene.add( light4 );
 
         loader = new THREE.OBJLoader();
+        var material = new THREE.MeshLambertMaterial();
         loader.load(objObject, function (obj) {
-            obj.scale.set(1.2,1.2,1.2);
-            obj.position.set(0,60,0);
+   
+
+            obj.traverse(function (child) {
+
+                if (child instanceof THREE.Mesh) {
+                    child.material = material;
+                }
+    
+            });
+
+            // obj.scale.set(1.2,1.2,1.2);
+            // obj.position.set(0,60,0);
+            // obj.position.y = 20;
+            obj.scale.set(2.9,2.9,2.9);
+
             scene.add(obj);
         })
 
