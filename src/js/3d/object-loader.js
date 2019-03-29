@@ -65,9 +65,6 @@ var objObject = require("./bwws_old.obj");
     
             });
 
-            // obj.scale.set(1.2,1.2,1.2);
-            // obj.position.set(0,60,0);
-            // obj.position.y = 20;
             obj.scale.set(2.9,2.9,2.9);
 
             scene.add(obj);
