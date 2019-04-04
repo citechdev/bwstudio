@@ -36,7 +36,7 @@ $(document).on('ready', function () {
 	var list = $('.bg-img');
 
 	function shouldBeContainBackgroundImage(width, index) {
-		if (width.matches) { // If media query matches
+		if (width.matches && $("body").hasClass("interior-rendering") || $("body").hasClass("interior-rendering")) { // If media query matches
 			list[index].style.backgroundSize = "contain";
 		} else {
 			list[index].style.backgroundSize = "cover";
@@ -51,6 +51,7 @@ $(document).on('ready', function () {
 		list[i].style.backgroundRepeat = "no-repeat";
 		list[i].style.backgroundPosition = "center";
 		shouldBeContainBackgroundImage(width, i);
+		
 	}
 	// Image block to Background image 
 	var listImgBlock = $('.img-block');
