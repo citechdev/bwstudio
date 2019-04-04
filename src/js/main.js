@@ -30,14 +30,27 @@ $(document).on('ready', function () {
 		}
 	}
 
+
+
 	// 1. Background image as data attribut 
 	var list = $('.bg-img');
+
+	function shouldBeContainBackgroundImage(width, index) {
+		if (width.matches) { // If media query matches
+			list[index].style.backgroundSize = "contain";
+		} else {
+			list[index].style.backgroundSize = "cover";
+		}
+	  }
+	  
+	var width = window.matchMedia("(max-width: 700px)")
+	
 	for (var i = 0; i < list.length; i++) {
 		var src = list[i].getAttribute('data-image-src');
 		list[i].style.backgroundImage = "url('" + src + "')";
 		list[i].style.backgroundRepeat = "no-repeat";
 		list[i].style.backgroundPosition = "center";
-		list[i].style.backgroundSize = "cover";
+		shouldBeContainBackgroundImage(width, i);
 	}
 	// Image block to Background image 
 	var listImgBlock = $('.img-block');
