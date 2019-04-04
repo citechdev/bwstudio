@@ -36,7 +36,7 @@ $(document).on('ready', function () {
 	var list = $('.bg-img');
 
 	function shouldBeContainBackgroundImage(width, index) {
-		if (width.matches && $("body").hasClass("interior-rendering") || $("body").hasClass("interior-rendering")) { // If media query matches
+		if (width.matches && $("body").hasClass("interior-rendering")) { // If media query matches
 			list[index].style.backgroundSize = "contain";
 		} else {
 			list[index].style.backgroundSize = "cover";
